@@ -7,26 +7,26 @@
     width: 400px;
     height: auto;
     margin: 10% auto;
-    text-align: center;    
+    text-align: center;
 }
 
 .input-field {
     margin: 10px auto;
 }
+
 .button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
-  .button-container button {
-    width: 48%; 
-  }
-  
+}
+
+.button-container button {
+    width: 48%;
+}
 
 button {
     width: 50%;
-    margin: 10px auto;   
+    margin: 10px auto;
     height: 45px;
     border-radius: 40px;
     border: none;

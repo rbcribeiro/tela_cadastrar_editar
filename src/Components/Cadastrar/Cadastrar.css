@@ -7,12 +7,7 @@
   align-items: center;
 }
 
-.Cadastrar {
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.Exibir {
+.Cadastrar .Exibir{
   padding: 20px;
   border-radius: 10px;
 }

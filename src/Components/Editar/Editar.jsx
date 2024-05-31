@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Modal from "react-modal";
+import "./Editar.css"; 
 
 const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
   const [username, setUsername] = useState("");
@@ -12,6 +13,14 @@ const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
     }
   }, [itemToEdit]);
 
+  const handleAddressChange = (e) => {
+    const inputValue = e.target.value;
+    // Verifica se o valor inserido é um número e se tem no máximo 4 caracteres
+    if (/^\d{0,4}$/.test(inputValue)) {
+      setAddress(inputValue);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     onEditSubmit({ username, address });
@@ -19,33 +28,38 @@ const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
   };
 
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
-      contentLabel="Editar Item"
-    >
-      <h2>Editar Item</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="input-field">
-          <input
-            type="text"
-            placeholder="Nome"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={onRequestClose}
+        contentLabel="Editar Item"
+        className="modal-content"
+      >
+        <div className="modal-container">
+          <h2>Editar Item</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="input-field">
+              <input
+                type="text"
+                placeholder="Nome"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
+            <div className="input-field">
+              <input
+                type="text"
+                placeholder="Endereço"
+                value={address}
+                onChange={handleAddressChange}
+              />
+            </div>
+            <div className="button-container">
+              <button type="submit">Salvar</button>
+              <button onClick={onRequestClose}>Cancelar</button>
+            </div>
+          </form>
         </div>
-        <div className="input-field">
-          <input
-            type="text"
-            placeholder="Endereço"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-        </div>
-        <button type="submit">Salvar</button>
-      </form>
-      <button onClick={onRequestClose}>Fechar</button>
-    </Modal>
+      </Modal>
   );
 };
 

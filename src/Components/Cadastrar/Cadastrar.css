@@ -10,6 +10,7 @@
 .Cadastrar .Exibir{
   padding: 20px;
   border-radius: 10px;
+
 }
 
 .ItemLista {
@@ -21,4 +22,17 @@
   border-radius: 10px;
   text-align: center;
   min-height: 400px;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  .ContainerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ItemLista {
+    min-width: auto;
+    max-width: 100%;
+    min-height: auto;
+  }
 }

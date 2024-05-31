@@ -40,3 +40,10 @@
   font-weight: 700;
   text-shadow: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .Inicio {
+    width: 90%;
+    padding: 20px;
+  }
+}

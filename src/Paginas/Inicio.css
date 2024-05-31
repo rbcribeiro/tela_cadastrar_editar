@@ -1,6 +1,6 @@
 .Inicio {
   width: 450px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.373);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -12,6 +12,7 @@
   background: none;
   border: none;
   padding: 0;
+  backdrop-filter: none;
 }
 
 .Inicio h1 {
@@ -37,5 +38,5 @@
   font-size: 18px;
   color: black;
   font-weight: 700;
-  text-shadow: none;  
+  text-shadow: none;
 }

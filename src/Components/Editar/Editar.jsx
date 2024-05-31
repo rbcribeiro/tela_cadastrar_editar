@@ -1,27 +1,51 @@
-import { useState } from "react";
-import Form from "../Form/Form";
+import { useState, useEffect } from "react";
+import Modal from "react-modal";
 
-const Editar = ({ onBack }) => {
+const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
   const [username, setUsername] = useState("");
   const [address, setAddress] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Dados de Edição:", { username, address });
+  useEffect(() => {
+    if (itemToEdit) {
+      setUsername(itemToEdit.username);
+      setAddress(itemToEdit.address);
+    }
+  }, [itemToEdit]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onEditSubmit({ username, address });
+    onRequestClose();
   };
 
   return (
-    <Form
-      title="Editar Endereço"
-      buttonText="Salvar"
-      username={username}
-      setUsername={setUsername}
-      address={address}
-      setAddress={setAddress}
-      handleSubmit={handleSubmit}
-      linkText="Voltar"
-      onBack={onBack}
-    />
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Editar Item"
+    >
+      <h2>Editar Item</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="Nome"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="Endereço"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
+        </div>
+        <button type="submit">Salvar</button>
+      </form>
+      <button onClick={onRequestClose}>Fechar</button>
+    </Modal>
   );
 };
 

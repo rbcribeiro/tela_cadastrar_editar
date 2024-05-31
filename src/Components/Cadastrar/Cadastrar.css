@@ -1,0 +1,29 @@
+.ContainerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cadastrar {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Exibir {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ItemLista {
+  min-width: 400px;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.373);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  min-height: 400px;
+}

@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, handleSubmit, items } from "react";
 import Cadastrar from "../Components/Cadastrar/Cadastrar";
-import Editar from "../Components/Editar/Editar";
 import "./Inicio.css";
 
 function Inicio() {
@@ -12,17 +11,14 @@ function Inicio() {
         <div className="initial-content">
           <h1>SpaceX</h1>
           <div className="button-field">
-            <button onClick={() => setMode("cadastrar")}>Cadastrar
-            </button>
-          </div>
-          <div className="button-field">
-            <button onClick={() => setMode("editar")}>Editar
+            <button onClick={() => setMode("cadastrar")}>
+              {" "}
+              Cadastrar Endereço{" "}
             </button>
           </div>
         </div>
       )}
       {mode === "cadastrar" && <Cadastrar onBack={() => setMode(null)} />}
-      {mode === "editar" && <Editar onBack={() => setMode(null)} />}
     </div>
   );
 }

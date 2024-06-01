@@ -97,8 +97,11 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
+
   .container {
-    width: 400px;
+    width: 100%;
+    margin: 20px 0;
+
   }
 }

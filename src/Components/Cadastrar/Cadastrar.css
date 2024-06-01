@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.Cadastrar .Exibir{
+.Cadastrar .Exibir {
   padding: 20px;
   border-radius: 10px;
 
@@ -27,6 +27,11 @@
 @media only screen and (max-width: 800px) {
   .ContainerGrid {
     grid-template-columns: 1fr;
-      padding: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .Exibir {
+      width: 250px;
+    }
   }
 }

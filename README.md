@@ -12,6 +12,7 @@ Você foi selecionado para construir um sistema de delivery interplanetário! Co
 - **Cadastro de Endereço**: Permite ao usuário cadastrar novos endereços, incluindo nome e endereço.
 - **Visualização de Endereços**: Exibe todos os endereços em Marte, que são formados apenas por 4 digitos numéricos.
 - **Edição de Endereços**: Oferece a opção de editar endereços já cadastrados.
+- **Busca por Nome**: Permite ao usuário fazer uma busca pelo nome do destinatário.
 
 &nbsp;
 

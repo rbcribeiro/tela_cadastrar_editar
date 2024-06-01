@@ -43,7 +43,16 @@
 
 @media only screen and (max-width: 800px) {
   .Inicio {
-    width: 90%;
+    width: 400px;
     padding: 20px;
+    
+  }
+  .content-mode {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
   }
 }

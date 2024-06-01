@@ -24,14 +24,19 @@
   min-height: 400px;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .ContainerGrid {
     grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
   }
+  .ItemLista>.Exibir {
+    width: 80%;
+  }
+}  
 
-  @media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .Exibir {
       width: 250px;
     }
   }
-}

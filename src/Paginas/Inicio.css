@@ -44,7 +44,7 @@
 @media only screen and (max-width: 800px) {
   .Inicio {
     width: 85%;
-    padding: 20px;
+    padding: 30px;
     
   }
   .content-mode {
@@ -54,4 +54,3 @@
     justify-content: center;
   }
 }
-

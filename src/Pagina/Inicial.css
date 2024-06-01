@@ -34,12 +34,8 @@ img {
   .containerGrid {
     display: flex;
     flex-direction: column;
-    margin: 20px 1%;
+    margin: 20px;
     padding: 20px 0;
-  }
-
-  .containerCadastrados {
-    width: 95%;
   }
 
   img {
@@ -48,12 +44,7 @@ img {
     object-fit: cover;
     margin-top: 10px;
   }
-}
-
-@media screen and (max-width: 500px) {
-
-  .containerCadastrados,
-  img {
-    width: 250px;
+  .containerCadastrados {
+    width: 95%;
   }
 }

@@ -81,9 +81,3 @@
     width: 95%;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .containerCadastrar {
-    width: 250px;
-  }
-}

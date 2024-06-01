@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Modal from "react-modal";
-import "./Editar.css";
 
 const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
   const [username, setUsername] = useState("");
@@ -52,9 +51,10 @@ const Editar = ({ isOpen, onRequestClose, itemToEdit, onEditSubmit }) => {
               onChange={handleAddressChange}
             />
           </div>
-          <div className="button-container">
-            <button type="submit">Salvar</button>
+          <div className="buttonContainer">
             <button onClick={onRequestClose}>Cancelar</button>
+            <button type="submit">Salvar</button>
+
           </div>
         </form>
       </div>

@@ -12,8 +12,17 @@
 
 p {
     margin: 5px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #c8bbbb;
+    font-size: 12px;
 }
+
+input {
+
+}
+
+input::placeholder {
+    color: #3a3838;
+  }
 
 .containerExibir {
     text-align: left;
@@ -59,15 +68,18 @@ svg {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin: 5px 0;
+
 }
 
 
 .item-list-container input[type="text"] {
-    width: 50%;
-    height: 20px;
+    width: 80%;
+    height: 25px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 12px;
+    
 }
 
 @media screen and (max-width: 800px) {

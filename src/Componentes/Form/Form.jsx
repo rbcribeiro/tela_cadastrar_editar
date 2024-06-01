@@ -85,13 +85,7 @@ const Form = ({ title, subtitle, buttonText, handleSubmit, linkText, onBack }) =
         </div>
 
         <button type="submit">{buttonText}</button>
-        <div className="signup-link">
-          <p>
-            <a href="#" onClick={onBack}>
-              {linkText}
-            </a>
-          </p>
-        </div>
+
       </form>
     </div>
   );

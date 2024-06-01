@@ -20,6 +20,8 @@
   border-radius: 10px;
   text-align: center;
   min-height: 500px;
+  margin: 20px 0;
+
 }
 
 img {
@@ -46,5 +48,6 @@ img {
   }
   .containerCadastrados {
     width: 95%;
+    margin: 0;
   }
 }

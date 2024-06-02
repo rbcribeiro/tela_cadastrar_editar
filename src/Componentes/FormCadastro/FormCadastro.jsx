@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaUser, FaStoreAlt, FaEnvelope, FaPhone } from "react-icons/fa";
-import "./Form.css";
+import "./FormCadastro.css";
 
-const Form = ({ title, subtitle, buttonText, handleSubmit, linkText, onBack }) => {
+const Form = ({ title, subtitle, buttonText, handleSubmit, }) => {
   const [username, setUsername] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");

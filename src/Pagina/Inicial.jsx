@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import Form from "../Componentes/Form/Form";
+import FormCadastro from "../Componentes/FormCadastro/FormCadastro";
 import ItemLista from "../Componentes/ItemLista/ItemLista";
 import Editar from "../Componentes/Editar/Editar";
 import Excluir from "../Componentes/Excluir/Excluir"; 
@@ -59,7 +59,7 @@ const Inicial = ({ onBack }) => {
     <div className="containerGrid">
         <img src={imagem} alt="Marte" className="imagemMarte" />
 
-        <Form
+        <FormCadastro
           title="SpaceX"
           subtitle="Novo Endereço"
           buttonText="CADASTRAR"

@@ -31,20 +31,15 @@ button {
 
 .buttonContainer, .containerButton {
   display: flex;
-}
+  justify-content: space-between;
 
-input {
-  margin: 20px auto;
 }
 
 .modal-content {
-  background: rgba(0, 0, 0, 0.373);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 400px;
   border-radius: 10px;
   padding: 30px;
-  width: 300px;
-  height: auto;
   margin: 10% auto;
   text-align: center;
+  background: #333;
 }

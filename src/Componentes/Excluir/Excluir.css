@@ -1,0 +1,10 @@
+.dadosExcluir {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.buttonExcluir:last-of-type {
+    background-color: #d9534f;
+}

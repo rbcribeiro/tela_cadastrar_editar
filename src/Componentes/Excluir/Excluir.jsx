@@ -1,16 +1,14 @@
-import { useState, useEffect } from "react";
 import Modal from "react-modal";
+import informacoesComuns from "../informacoesComuns/informacoesComuns";
+import "./Excluir.css"
 
 const Excluir = ({ isOpen, onRequestClose, itemToDelete, onDeleteSubmit }) => {
-  const [username, setUsername] = useState("");
-  const [address, setAddress] = useState("");
-
-  useEffect(() => {
-    if (itemToDelete) {
-      setUsername(itemToDelete.username);
-      setAddress(itemToDelete.address);
-    }
-  }, [itemToDelete]);
+  const {
+    username,
+    address,
+    email,
+    phone,
+  } = informacoesComuns(itemToDelete);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,25 +23,28 @@ const Excluir = ({ isOpen, onRequestClose, itemToDelete, onDeleteSubmit }) => {
       contentLabel="Excluir Item"
       className="modal-content"
     >
-      <div className="modal-container">
-        <h2>Excluir Item</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="input-field">
-            <input type="text" placeholder="Nome" value={username} readOnly />
-          </div>
-          <div className="input-field">
-            <input
-              type="text"
-              placeholder="Endereço"
-              value={address}
-              readOnly
-            />
-          </div>
-          <div className="buttonContainer">
-            <button onClick={onRequestClose}>Cancelar</button>
-            <button type="submit">Excluir</button>
-          </div>
-        </form>
+      <div>
+        <h2>Deseja Excluir?</h2>
+        <div className="dadosExcluir">
+          <label>Nome:</label>
+          <span>{username}</span>
+        </div>
+        <div className="dadosExcluir">
+          <label>Endereço:</label>
+          <span>{address}</span>
+        </div>
+        <div className="dadosExcluir">
+          <label>Email:</label>
+          <span>{email}</span>
+        </div>
+        <div className="dadosExcluir">
+          <label>Telefone:</label>
+          <span>{phone}</span>
+        </div>
+        <div className="buttonContainer">
+          <button onClick={onRequestClose}>Cancelar</button>
+          <button type="submit" onClick={handleSubmit} className="buttonExcluir">Excluir</button>
+        </div>
       </div>
     </Modal>
   );

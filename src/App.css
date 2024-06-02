@@ -29,10 +29,10 @@ button {
   font-weight: 700;
 }
 
-.buttonContainer, .containerButton {
+.buttonContainer,
+.containerButton {
   display: flex;
   justify-content: space-between;
-
 }
 
 .modal-content {
@@ -42,4 +42,10 @@ button {
   margin: 10% auto;
   text-align: center;
   background: #333;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-content {
+    width: 90%;
+  }
 }

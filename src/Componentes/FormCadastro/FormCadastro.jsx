@@ -56,7 +56,7 @@ const Form = ({ title, subtitle, buttonText, handleSubmit, }) => {
         <div className="input-field">
           <input
             type="text"
-            placeholder="Endereço"
+            placeholder="Endereço - 4 dígitos numéricos"
             required
             value={address}
             onChange={handleAddressChange}

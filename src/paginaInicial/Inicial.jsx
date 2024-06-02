@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import FormCadastro from "../Componentes/FormCadastro/FormCadastro";
-import ItemLista from "../Componentes/ItemLista/ItemLista";
-import Editar from "../Componentes/Editar/Editar";
-import Excluir from "../Componentes/Excluir/Excluir"; 
+import FormCadastro from "../componentes/FormCadastro/FormCadastro";
+import ItemLista from "../componentes/ItemLista/ItemLista";
+import Editar from "../componentes/Editar/Editar";
+import Excluir from "../componentes/Excluir/Excluir"; 
 import "./Inicial.css";
 import imagem from "../assets/marte.jpg";
 

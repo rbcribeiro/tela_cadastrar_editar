@@ -8,12 +8,15 @@ Você foi selecionado para construir um sistema de delivery interplanetário! Co
 
 ## Funcionalidades
 
-- **Página Inicial**: Apresenta uma visão geral do sistema de delivery interplanetário.
-- **Cadastro de Endereço**: Permite ao usuário cadastrar novos endereços, incluindo nome e endereço.
-- **Visualização de Endereços**: Exibe todos os endereços em Marte, que são formados apenas por 4 digitos numéricos.
-- **Edição de Endereços**: Oferece a opção de editar endereços já cadastrados.
-- **Busca por Nome**: Permite ao usuário fazer uma busca pelo nome do destinatário.
+- **Página Inicial:** Apresenta uma visão geral do sistema de delivery interplanetário com uma interface bonita e intuitiva.
+- **Cadastro de Endereço:** Permite ao usuário cadastrar novos endereços, incluindo nome e endereço, de forma funcional e direta.
+- **Listagem de Dados:** Exibe todos os endereços em Marte, que são formados apenas por 4 dígitos numéricos, com uma interface clara e de fácil navegação.
+- **Edição de Informações:** Oferece a opção de editar endereços já cadastrados, com uma experiência de usuário otimizada.
+- **Exclusão de Endereço:** Pode-se excluir endereços já cadastrados de maneira rápida e segura.
+- **Busca por Nome:** Permite ao usuário fazer uma busca/filtragem pelo nome, facilitando a localização de endereços específicos.
 
+## Responsividade
+A interface do sistema foi projetada para ser completamente responsiva, garantindo que todas as funcionalidades estejam acessíveis tanto em dispositivos móveis quanto em desktops, sem comprometer a usabilidade ou estética.
 ## 🎯 [Visite o Site](https://rbcribeiro.github.io/tela_cadastrar_editar/) 
 
 <div align="center">
